@@ -1,0 +1,76 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en"><head><meta charset="UTF-8"><meta name="DC.rights.owner" content="(C) Copyright 2022"><meta name="copyright" content="(C) Copyright 2022"><meta name="generator" content="DITA-OT"><meta name="DC.type" content="topic"><meta name="DC.relation" scheme="URI" content="perform_a_static_analysis1.html"><meta name="DC.format" content="HTML5"><meta name="DC.identifier" content="bookmark141"><title>To Define a Static Analysis</title><link rel="stylesheet" type="text/css" href="commonltr.css"></head><body id="bookmark141"><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+      <h1 class="title topictitle1" id="ariaid-title1">To Define a Static Analysis</h1>
+      <div class="body">
+        <p class="p">
+          <img class="image" src="media/img(85).jpg"> 1. Select <strong class="ph b">Analysis &gt;
+Setup &gt; Static Analysis Sets</strong> to display the following
+dialog.</p>
+        <p class="p">
+          <img class="image" src="media/img(399).png">
+        </p>
+        <ol class="ol">
+          <li class="li">Select <strong class="ph b">Analysis Set No. 1</strong> and click
+<strong class="ph b">Modify</strong> to display the following dialog.</li>
+        </ol>
+        <p class="p">
+          <img class="image" src="media/img(86).jpg">
+        </p>
+        <ol class="ol">
+          <li class="li">Enable the <strong class="ph b">Gravity</strong> and <strong class="ph b">Thermal Cases
+T1</strong> options to check for these loads.</li>
+          <li class="li">Since we have defined gaps and friction on the guide supports
+that connect to the frames, we will need to enable
+<strong class="ph b">Gaps/Friction/Soil</strong> field. By enabling this field,
+AutoPIPE considers these non- linear boundary conditions during the
+static analysis.</li>
+        </ol>
+        <table class="table"><caption></caption><colgroup><col><col></colgroup><tbody class="tbody">
+              <tr class="row">
+                <td class="entry">
+                  <strong class="ph b">Hint:</strong>
+                </td>
+                <td class="entry">
+                  <p class="p">To perform a non-linear analysis, you must always enable the
+<em class="ph i">Gaps/Friction/Soil</em> option</p>
+                  <p class="p">in the <em class="ph i">Static Load Cases</em> dialog as described above.</p>
+                </td>
+              </tr>
+            </tbody></table>
+        <ol class="ol">
+          <li class="li">Press <strong class="ph b">OK</strong> to accept the remaining defaults and
+close the <em class="ph i">Static Load Cases</em> dialog.</li>
+          <li class="li">Since you enabled Gaps/Friction/Soil, AutoPIPE displays the
+<em class="ph i">Non-linear Analysis</em> dialog to allow customization of how
+the non-linear analysis is performed. Customization is only
+required if convergence problems occur during the analysis or a
+special load sequence is required.</li>
+        </ol>
+        <p class="p">
+          <img class="image" src="media/img(400).png">
+        </p>
+        <ol class="ol">
+          <li class="li">Make sure the <em class="ph i">Force tolerance</em> field is set to
+<strong class="ph b">100.00</strong> {444.82}.</li>
+          <li class="li">Accept the remaining default values as shown and click
+<strong class="ph b">OK</strong>.</li>
+          <li class="li">Press <strong class="ph b">OK</strong> to close the <em class="ph i">Analysis Sets</em>
+dialog.</li>
+        </ol>
+        <table class="table"><caption></caption><colgroup><col><col></colgroup><tbody class="tbody">
+              <tr class="row">
+                <td class="entry">
+                  <strong class="ph b">Note:</strong>
+                </td>
+                <td class="entry">
+                  <p class="p">You will be prompted with a dialog asking if you want to analyze
+the model. Click</p>
+                  <p class="p">
+                    <strong class="ph b">Cancel</strong> as you will perform a Static Analysis in
+the next exercise.</p>
+                </td>
+              </tr>
+            </tbody></table>
+      </div>
+    <nav role="navigation" class="related-links"><div class="familylinks"><div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="perform_a_static_analysis1.html">Perform a Static Analysis</a></div></div></nav></article></main></body></html>

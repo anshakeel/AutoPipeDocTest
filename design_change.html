@@ -1,0 +1,107 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en"><head><meta charset="UTF-8"><meta name="DC.rights.owner" content="(C) Copyright 2022"><meta name="copyright" content="(C) Copyright 2022"><meta name="generator" content="DITA-OT"><meta name="DC.type" content="topic"><meta name="DC.relation" scheme="URI" content="select_result__interactive__code_stresses.1.html"><meta name="DC.format" content="HTML5"><meta name="DC.identifier" content="bookmark95"><title>Design Change</title><link rel="stylesheet" type="text/css" href="commonltr.css"></head><body id="bookmark95"><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">Design Change</h1>
+    <div class="body">
+      <p class="p">Having already reviewed stresses, deflections, and loads, we
+will now iterate through a design change. AutoPIPE facilitates this
+process by helping you to quickly re-run an analysis to determine
+whether a design change produced the desired effect.</p>
+      <p class="p">1. Pick point <strong class="ph b">A01 N</strong>.</p>
+      <p class="p">
+        <img class="image" src="media/img(314).png">
+        <img class="image" src="media/img(315).png">
+2. Select <strong class="ph b">Insert &gt; Supports &gt; Support</strong>.</p>
+      <ol class="ol">
+        <li class="li">Select <strong class="ph b">Guide</strong> from the <em class="ph i">Support type</em>
+field.</li>
+        <li class="li">Press <strong class="ph b">OK</strong> to accept the defaults and close the
+dialog. The Guide is placed in the model as shown in the following
+figure.</li>
+      </ol>
+      <p class="p">A guide is placed at bend near point A01 N.</p>
+      <img class="image" src="media/img(316).png">
+      <ol class="ol">
+        <li class="li">
+          <img class="image" src="media/img(51).jpg">Select <strong class="ph b">View &gt; Mode
+&gt; Solid Model View</strong> to display a 3D representation of
+the model.</li>
+        <li class="li">
+          <img class="image" src="media/img(52).jpg">After adding the new component,
+you have to re-run the static analysis; otherwise, the results
+(based on the addition of the guide support) will not reflect the
+properties of the design change. Select <strong class="ph b">Analysis &gt;
+Analyze &gt; Static</strong>.</li>
+      </ol>
+      <table class="table"><caption></caption><colgroup><col><col></colgroup><tbody class="tbody">
+            <tr class="row">
+              <td class="entry">
+                <strong class="ph b">Hint:</strong>
+              </td>
+              <td class="entry">
+                <p class="p">As mentioned previously, the Static Analysis runs a static
+analysis using the last set of</p>
+                <p class="p">options defined in the dialog. Use the command when re-running
+an analysis.</p>
+              </td>
+            </tr>
+          </tbody></table>
+      <ol class="ol">
+        <li class="li">Select <strong class="ph b">Result &gt; Interactive &gt; Code
+Stresses</strong> to check the piping code stress results.</li>
+      </ol>
+      <p class="p">
+        <img class="image" src="media/img(317).png">
+      </p>
+      <ol class="ol">
+        <li class="li">Press <strong class="ph b">OK</strong> to accept the defaults and review the
+stress ratios. A color-coded stress plot of the model is displayed.
+Note that the red areas help you to quickly determine where the
+system is still overstressed.</li>
+      </ol>
+      <p class="p">The red areas in the display help to quickly locate areas of
+high stress.</p>
+      <img class="image" src="media/img(53).jpg">
+      <ol class="ol">
+        <li class="li">Press <strong class="ph b">Cancel</strong> to exit interactive stress
+review.</li>
+        <li class="li">
+          <img class="image" src="media/img(318).png">The Guide support did not solve
+the stress problem. "Undo" the design change by selecting</li>
+      </ol>
+      <p class="p">
+        <strong class="ph b">Home &gt; Clipboard &gt; Undo</strong>. The Guide is
+removed from the model.</p>
+      <ol class="ol">
+        <li class="li">You will now try another design change in which we add length
+to the first elbow in order to add flexibility. Pick point
+<strong class="ph b">A01</strong> to make it active.</li>
+        <li class="li">Select <strong class="ph b">Modify &gt; Piping Components &gt;
+Bend</strong>, or double-click on point <strong class="ph b">A01</strong>.</li>
+      </ol>
+      <p class="p">
+        <img class="image" src="media/img(319).png">
+      </p>
+      <ol class="ol">
+        <li class="li">In the <em class="ph i">Length</em> field, enter <strong class="ph b">14</strong> feet
+{4000} mm.</li>
+        <li class="li">Enable the <strong class="ph b">Apply offsets to all following
+points</strong> field. Note that the DZ value is updated.</li>
+        <li class="li">Press <strong class="ph b">OK</strong> to close the dialog. The model is
+redrawn as shown in the following figure.</li>
+      </ol>
+      <p class="p">The length of this run was extended.</p>
+      <img class="image" src="media/img(320).png">
+      <img class="image" src="media/img(321).png">
+      <ol class="ol">
+        <li class="li">
+          <img class="image" src="media/img(54).jpg">Let's see if the new design
+change helps to alleviate the points of high stress in the system.
+Select</li>
+      </ol>
+      <p class="p">
+        <strong class="ph b">Analysis &gt; Analyze &gt; Static</strong> to re-analyze
+the system.</p>
+    </div>
+    
+  <nav role="navigation" class="related-links"><ul class="ullinks"><li class="link ulchildlink"><strong><a href="select_result__interactive__code_stresses.1.html">Select Result &gt; Interactive &gt; Code Stresses.</a></strong><br></li></ul></nav></article></main></body></html>

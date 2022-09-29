@@ -1,0 +1,114 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en"><head><meta charset="UTF-8"><meta name="DC.rights.owner" content="(C) Copyright 2022"><meta name="copyright" content="(C) Copyright 2022"><meta name="generator" content="DITA-OT"><meta name="DC.type" content="topic"><meta name="DC.format" content="HTML5"><meta name="DC.identifier" content="bookmark63"><title>Chapter Review</title><link rel="stylesheet" type="text/css" href="commonltr.css"></head><body id="bookmark63"><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">Chapter Review</h1>
+    <div class="body">
+      <p class="p">In this chapter we introduced several modeling techniques which
+were used in the construction of a model. Before continuing, please
+review the following concepts, which were introduced in this
+chapter.</p>
+      <ul class="ul">
+        <li class="li">
+          <strong class="ph b">Piping Codes</strong>: Each model in AutoPIPE must be
+associated with a specific Piping Code. AutoPIPE will automatically
+generate component and material options during operation of the
+program based on the selected piping code. The code is also used in
+code compliance calculations.</li>
+        <li class="li">
+          <strong class="ph b">Pipe Properties</strong>: Every object placed in a
+model is associated with a particular set of pipe properties. These
+properties are initially defined during the creation of a new
+system, but can be modified at any point during the design
+process.</li>
+        <li class="li">
+          <img class="image" src="media/img(24).jpg">
+          <strong class="ph b">Bend Placement</strong>:
+Bends require a unique placement procedure. First, the user
+specifies a tangent intersection point (TIP). This is the location
+where two perpendicular pipe runs would intersect, and does not
+indicate an actual physical point on the bend itself. After the TIP
+is specified, the user must specify the location of the next
+component or point. The downstream/next point helps to orient the
+elbow in three-dimensional space.</li>
+      </ul>
+      <p class="p">
+        <img class="image" src="media/img(252).png">
+        <img class="image" src="media/img(253).png">
+ <strong class="ph b">Flange Insertion</strong>: Flanges may be inserted
+on both sides of a component (i.e., a valve) with a single command.
+Highlight the desired component, then select Insert &gt; Piping
+Components &gt; Flange. After completing the dialog, flanges will
+be placed on both sides of the selected component.</p>
+      <ul class="ul">
+        <li class="li">
+          <img class="image" src="media/img(254).png">
+          <strong class="ph b">Tee Insertion</strong>:
+Like elbows, tees rely on the placement of a connecting component
+in order to orient it properly. Before the branch can be oriented,
+a run point or component must be routed off the branch end of the
+tee. To route off a tee branch, select the arrow graphic associated
+with the tee, then select the desired point or component placement
+command.</li>
+        <li class="li">
+          <strong class="ph b">Zoom Controls</strong>: AutoPIPE provides a variety of
+commands for controlling the display of the model. The Zoom
+controls are available in the View tab, and on a special set of
+toolbar buttons. A zoom control panel appears on the bottom of the
+application window, and the model is displayed as a wireframe. Use
+the commands in the menu or toolbar, or interactively pan, zoom,
+and rotate the model using the keyboard commands listed on the
+control bar.</li>
+      </ul>
+      <p class="p">
+        <img class="image" src="media/img(25).jpg">  <strong class="ph b">Converting a
+Point</strong>: Intersecting points on pipe runs can be converted
+to a bend or a tee. The process is to first route the pipe runs,
+then select the intersection point and execute the appropriate
+Modify &gt; Convert Point To command. Existing points can also be
+converted to run points using the Modify &gt; Convert Point To &gt;
+Run command.</p>
+      <ul class="ul">
+        <li class="li">
+          <img class="image" src="media/img(255).png">
+          <strong class="ph b">Intermediate
+Points</strong>: Points can be added along an existing pipe run.
+The process is to first select a starting point, then select Insert
+&gt; Piping Components &gt; Run. When the Run Point dialog appears,
+specify the desired quantity of intermediate points in the Generate
+Points field. By default, the new point(s) will be equally spaced
+between the active point and the next downstream point.</li>
+      </ul>
+      <p class="p">
+        <img class="image" src="media/img(256).png">  <strong class="ph b">Renumbering
+Points</strong>: When inserting new points along an existing run,
+the point names will no</p>
+      <p class="p">
+        <img class="image" src="media/img(257).png">longer be numbered sequentially
+along the segment (assuming the default naming scheme was
+utilized). To correct this, use the Home &gt; Operations &gt;
+Renumber commands.</p>
+      <ul class="ul">
+        <li class="li">
+          <img class="image" src="media/img(26).jpg">
+          <strong class="ph b">Copy/Pasting a
+Range</strong>: Ranges of components can be copied and pasted to
+facilitate the modeling process. First select the range, then
+select Home &gt; Clipboard &gt; Copy. The selected range is copied
+to the Windows clipboard. You can now select a point in the model
+and paste the copied elements to a new location. AutoPIPE will
+automatically assign unique point names to</li>
+      </ul>
+      <p class="p">the copied component set.</p>
+      <ul class="ul">
+        <li class="li">
+          <img class="image" src="media/img(258).png">
+          <strong class="ph b">Moving/Stretching</strong>:
+AutoPIPE allows you to easily re-position components in the model.
+Select the range, then select Home &gt; Operations &gt;
+Move/Stretch. Input the new coordinates in the dialog. The
+cutlengths of components attached to the re-positioned range will
+be updated automatically and all connections will remain
+intact.</li>
+      </ul>
+    </div>
+  </article></main></body></html>

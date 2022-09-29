@@ -1,0 +1,167 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en"><head><meta charset="UTF-8"><meta name="DC.rights.owner" content="(C) Copyright 2022"><meta name="copyright" content="(C) Copyright 2022"><meta name="generator" content="DITA-OT"><meta name="DC.type" content="topic"><meta name="DC.format" content="HTML5"><meta name="DC.identifier" content="bookmark127"><title>Creating a New AutoPIPE Frame Model</title><link rel="stylesheet" type="text/css" href="commonltr.css"></head><body id="bookmark127"><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">Creating a New AutoPIPE Frame
+Model</h1>
+    <div class="body">
+      <p class="p">
+        <img class="image" src="media/img(70).jpg">In this section you will create a
+portal frame as a separate model so that it may be inserted in
+other models as well. In this manner, you can create libraries of
+support structures.</p>
+      <ol class="ol">
+        <li class="li">Select <strong class="ph b">File &gt; Save &gt; Save</strong> (if you
+haven’t already done so) to save the current state of the
+active</li>
+      </ol>
+      <p class="p">model. You will be creating a new model in the next step and
+then connecting it to this one.</p>
+      <ol class="ol">
+        <li class="li">
+          <img class="image" src="media/img(71).jpg">Select <strong class="ph b">File &gt; File
+&gt; New</strong> to create the new AutoPIPE model.</li>
+        <li class="li">You will build the portal frame using W8x18 beams. So that it
+can be easily identified, let’s create a unique name for the
+frame to be included in a library. Enter <strong class="ph b">supz8x18</strong>
+as the new <em class="ph i">File name</em>, and then press <strong class="ph b">Save</strong>
+to create the new model file.</li>
+        <li class="li">The <em class="ph i">General Model Options</em> dialog is displayed.</li>
+        <li class="li">Input the following values, and then press <strong class="ph b">OK</strong>
+to close the dialog.</li>
+      </ol>
+      <p class="p">Project ID: <strong class="ph b">w8X18 portal frame</strong> Prepared by:
+<em class="ph i">{your initials}</em> Piping code: <strong class="ph b">B31.1 Power</strong>
+Edition: <strong class="ph b">2012</strong>
+      </p>
+      <p class="p">Unit file name - Input: <strong class="ph b">AUTOPIPE</strong>
+      </p>
+      <p class="p">Output: <strong class="ph b">AUTOPIPE</strong>
+      </p>
+      <p class="p">
+        <img class="image" src="media/img(366).png">
+      </p>
+      <ol class="ol">
+        <li class="li">
+          <img class="image" src="media/img(72).jpg">The <em class="ph i">Segment</em> dialog is
+displayed. Normally, you would want to name and define the origin
+points for the first segment in the model. However, since this
+model will contain only beams and no pipe segments, press
+<strong class="ph b">Cancel</strong> to close the dialog. No starting segment
+will be defined.</li>
+        <li class="li">Select <strong class="ph b">Insert &gt; Structure &gt; Beam Section
+Properties</strong> to begin creating the portal frame.</li>
+      </ol>
+      <p class="p">
+        <img class="image" src="media/img(367).png">
+      </p>
+      <ol class="ol">
+        <li class="li">Select <strong class="ph b">Standard</strong> from <em class="ph i">Section type</em>
+section and <strong class="ph b">STEEL</strong> as the <em class="ph i">Material
+name</em>.</li>
+        <li class="li">Click the <strong class="ph b">Select</strong> button to open the
+<em class="ph i">Section Profile Database</em> dialog.</li>
+        <li class="li">Select <strong class="ph b">W Shape</strong> from <em class="ph i">American</em> country
+section, <strong class="ph b">W8X18</strong> from <em class="ph i">Select Beam</em> field and
+<strong class="ph b">Single Section</strong> from <em class="ph i">Type Specification</em> as
+shown below.</li>
+      </ol>
+      <p class="p">
+        <img class="image" src="media/img(368).png">
+      </p>
+      <ol class="ol">
+        <li class="li">Click <strong class="ph b">OK</strong> to close the <em class="ph i">Section Profile
+Database</em> dialog.</li>
+        <li class="li">
+          <img class="image" src="media/img(73).jpg">Click <strong class="ph b">OK</strong> to
+close the <em class="ph i">Beam Section Properties</em> dialog.</li>
+        <li class="li">Select <strong class="ph b">Insert &gt; Structure &gt; Beam</strong>.</li>
+        <li class="li">AutoPIPE creates the default beam name M1. You will now define
+the name and position of the endpoints defining this beam. Input
+the following values:</li>
+      </ol>
+      <p class="p">From Point I: <strong class="ph b">1</strong>
+      </p>
+      <p class="p">To Point J: <strong class="ph b">2</strong>
+      </p>
+      <p class="p">Point J/ DY offset: <strong class="ph b">8</strong> (feet) {2400} mm Section
+ID: <strong class="ph b">W8X18</strong>
+      </p>
+      <p class="p">
+        <img class="image" src="media/img(369).png">
+      </p>
+      <ol class="ol">
+        <li class="li">
+          <img class="image" src="media/img(74).jpg">Press <strong class="ph b">OK</strong> to
+accept the values and close the dialog. A single, vertical beam
+member is inserted in the model.</li>
+        <li class="li">You will now build the beam forming the top of the frame. In
+this example, you want to place a support in the center of the top
+beam, so you will define the horizontal portion of the pipe rack
+using two beams of equal distance. This will give a midpoint on the
+beam at which to place the support. Click on <strong class="ph b">Point
+2</strong> to make it the current point and re-select
+<strong class="ph b">Insert &gt; Structure &gt; Beam</strong> to open the
+<em class="ph i">Beam</em> dialog. Accept the default Beam ID (M2) and From
+Point I(2), then input the following values to build the second
+frame member:</li>
+      </ol>
+      <table class="table"><caption></caption><colgroup><col><col></colgroup><tbody class="tbody">
+            <tr class="row">
+              <td class="entry">
+                <strong class="ph b">Note:</strong>
+              </td>
+              <td class="entry">Note that the Section ID automatically defaults to the values
+defined for M1.</td>
+            </tr>
+          </tbody></table>
+      <p class="p">
+        <img class="image" src="media/img(370).png">
+      </p>
+      <p class="p">To Point J: <strong class="ph b">3</strong>
+      </p>
+      <p class="p">Point J/ DZ offset: <strong class="ph b">4</strong> (feet) {2400} mm</p>
+      <ol class="ol">
+        <li class="li">
+          <img class="image" src="media/img(75).jpg">Press <strong class="ph b">OK</strong> to
+accept the values and close the dialog. The model appears as shown
+below.</li>
+      </ol>
+      <p class="p">
+        <img class="image" src="media/img(371).png">
+      </p>
+      <ol class="ol">
+        <li class="li">Point 3 will be the midpoint on the horizontal section of this
+frame. The next step is to create the second beam to complete this
+horizontal section. Click on <strong class="ph b">Point 3</strong> to make it
+the current point and select <strong class="ph b">Insert &gt; Structure &gt;
+Beam</strong> to open the M3 beam dialog. Input the following
+values, then press <strong class="ph b">OK</strong> when done:</li>
+      </ol>
+      <p class="p">
+        <img class="image" src="media/img(372).png">
+      </p>
+      <p class="p">To Point J: <strong class="ph b">4</strong>
+      </p>
+      <p class="p">Point J/ DZ offset: <strong class="ph b">4</strong> (feet) {2400} mm</p>
+      <ol class="ol">
+        <li class="li">
+          <img class="image" src="media/img(76).jpg">To complete the frame you will
+define a second vertical beam. Click on <strong class="ph b">Point 4</strong> to
+make it the current point and select <strong class="ph b">Insert &gt; Structure
+&gt; Beam</strong> to open the M4 beam dialog. Input the following
+values, and then press <strong class="ph b">OK</strong> when done.</li>
+      </ol>
+      <p class="p">
+        <img class="image" src="media/img(373).png">
+      </p>
+      <p class="p">To Point J: <strong class="ph b">5</strong>
+      </p>
+      <p class="p">Point J/ DY offset: <strong class="ph b">-8</strong> (feet) {2400} mm</p>
+      <ol class="ol">
+        <li class="li">The model now appears as shown below.</li>
+      </ol>
+      <p class="p">
+        <img class="image" src="media/img(374).png">
+      </p>
+    </div>
+  </article></main></body></html>

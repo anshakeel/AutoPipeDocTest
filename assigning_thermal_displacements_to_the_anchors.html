@@ -1,0 +1,82 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en"><head><meta charset="UTF-8"><meta name="DC.rights.owner" content="(C) Copyright 2022"><meta name="copyright" content="(C) Copyright 2022"><meta name="generator" content="DITA-OT"><meta name="DC.type" content="topic"><meta name="DC.relation" scheme="URI" content="assigning_loads.html"><meta name="DC.format" content="HTML5"><meta name="DC.identifier" content="bookmark85"><title>Assigning Thermal Displacements to the Anchors</title><link rel="stylesheet" type="text/css" href="commonltr.css"></head><body id="bookmark85"><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+      <h1 class="title topictitle1" id="ariaid-title1">Assigning Thermal Displacements to the
+Anchors</h1>
+      <div class="body">
+        <ol class="ol">
+          <li class="li">Double-click the Anchor at point <strong class="ph b">A00</strong> to modify
+it.</li>
+        </ol>
+        <table class="table"><caption></caption><colgroup><col><col></colgroup><tbody class="tbody">
+              <tr class="row">
+                <td class="entry">
+                  <strong class="ph b">Note:</strong>
+                </td>
+                <td class="entry">
+                  <p class="p">In most cases, simply double-click any component to open its
+associated modification</p>
+                  <p class="p">dialog. Another method would be to select the component, then
+select the associated command from the <em class="ph i">Modify</em> tab.</p>
+                </td>
+              </tr>
+            </tbody></table>
+        <ol class="ol">
+          <li class="li">Assume that the anchor at A00 represents a connection to a
+vessel that experiences thermal growth. Instead of building the
+entire vessel using pipe elements, we will specify thermal
+displacements for each thermal load case in the
+<em class="ph i">Anchor/NodeLink</em> dialog. Input the following values in the
+<em class="ph i">Thermal Anchor Movement</em> section of the dialog:</li>
+        </ol>
+        <table class="table"><caption></caption><colgroup><col><col><col><col></colgroup><tbody class="tbody">
+              <tr class="row">
+                <td class="entry"></td>
+                <td class="entry">T1 DY</td>
+                <td class="entry">
+                  <strong class="ph b">- 0.1</strong> {-2.5}</td>
+                <td class="entry">(inches) {mm}</td>
+              </tr>
+              <tr class="row">
+                <td class="entry"></td>
+                <td class="entry">T2 DY</td>
+                <td class="entry">
+                  <strong class="ph b">0.6</strong> {15.0}</td>
+                <td class="entry">(inches) {mm}</td>
+              </tr>
+              <tr class="row">
+                <td class="entry"></td>
+                <td class="entry">T2 RZ</td>
+                <td class="entry">
+                  <strong class="ph b">2</strong>
+                </td>
+                <td class="entry">(degrees rotation)</td>
+              </tr>
+              <tr class="row">
+                <td class="entry">
+                  <p class="p">
+                    <strong class="ph b">Note:</strong>
+                  </p>
+                  <p class="p">
+                    <img class="image" src="media/img(40).jpg">
+                  </p>
+                </td>
+                <td class="entry" colspan="3">
+                  <p class="p">Imposed displacements associated with load cases other than
+thermal can be input using the <strong class="ph b">Insert &gt; Xtra Data &gt;
+Imposed Displacement</strong> command. This feature enables the
+user to simulate anchor and support displacements for equipment</p>
+                  <p class="p">settlement or displacement due to wind, seismic, or fluid
+transient loads.</p>
+                </td>
+              </tr>
+            </tbody></table>
+        <p class="p">
+          <img class="image" src="media/img(292).png">
+        </p>
+        <ol class="ol">
+          <li class="li">Press <strong class="ph b">OK</strong> to close the dialog and apply the
+loads.</li>
+        </ol>
+      </div>
+    <nav role="navigation" class="related-links"><div class="familylinks"><div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="assigning_loads.html">Assigning Loads</a></div></div></nav></article></main></body></html>

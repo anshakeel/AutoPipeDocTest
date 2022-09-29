@@ -1,0 +1,39 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en"><head><meta charset="UTF-8"><meta name="DC.rights.owner" content="(C) Copyright 2022"><meta name="copyright" content="(C) Copyright 2022"><meta name="generator" content="DITA-OT"><meta name="DC.type" content="topic"><meta name="DC.format" content="HTML5"><meta name="DC.identifier" content="bookmark147"><title>Applying Result Filter Criteria</title><link rel="stylesheet" type="text/css" href="commonltr.css"></head><body id="bookmark147"><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">Applying Result Filter Criteria</h1>
+    <div class="body">
+      <p class="p">After examining the point information for A07, we note
+deflections exceeding our design criteria of 0.8 inches at point
+A07. In order to identify all points meeting these criteria, we
+will utilize AutoPIPE's Result filter option.</p>
+      <ol class="ol">
+        <li class="li">
+          <img class="image" src="media/img(89).jpg">Select <strong class="ph b">Result &gt;
+Filters &gt; Displacement</strong>.</li>
+        <li class="li">The <em class="ph i">Displacement Result Filter</em> dialog is displayed as
+shown below.</li>
+      </ol>
+      <p class="p">
+        <img class="image" src="media/img(409).png">
+      </p>
+      <ol class="ol">
+        <li class="li">By using the filter option, AutoPIPE will automatically
+highlight all points on the model that satisfy the filter condition
+for visual checking. Note that these points are added to the
+existing selection set. Furthermore, we can use this same filter
+condition to generate a report that contains only those points that
+meet the filter criteria. In this case, we wish to report only
+displacements greater than .8 inches. Enable the
+<strong class="ph b">DX</strong>, <strong class="ph b">DY</strong>, and <strong class="ph b">DZ</strong>
+fields, then enter <strong class="ph b">0.8</strong> {20} in the numeric field
+for each of the offsets as shown in the dialog above.</li>
+        <li class="li">Press <strong class="ph b">OK</strong> to close the dialog. The model
+appears as shown below. AutoPIPE automatically highlights the
+section of the model that satisfies the filter condition.</li>
+      </ol>
+      <p class="p">This section of the model is selected to indicate that it meets
+the filter criteria.</p>
+      <img class="image" src="media/img(410).png">
+    </div>
+  </article></main></body></html>

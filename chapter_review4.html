@@ -1,0 +1,71 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en"><head><meta charset="UTF-8"><meta name="DC.rights.owner" content="(C) Copyright 2022"><meta name="copyright" content="(C) Copyright 2022"><meta name="generator" content="DITA-OT"><meta name="DC.type" content="topic"><meta name="DC.format" content="HTML5"><meta name="DC.identifier" content="bookmark117"><title>Chapter Review</title><link rel="stylesheet" type="text/css" href="commonltr.css"></head><body id="bookmark117"><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">Chapter Review</h1>
+    <div class="body">
+      <p class="p">In this chapter you learned how to convert an AutoPLANT
+97-generated PXF file to an AutoPIPE piping stress model. We used
+this imported model as a starting point on which to attach new
+components. Before we could do this, however, we converted a run
+point on the imported model into a tee point. After specifying the
+branch direction, we were able to route a new run point off the
+branch and define the local flexbilities at the nozzle/vessel
+connection.</p>
+      <p class="p">Finally, we created a vessel using a new, disconnected segment
+and defined unique pipe properties for the vessel. The vessel and
+the piping line were then connected with a rigid element placed
+between the two segments.</p>
+      <p class="p">Before continuing, review the following concepts/techniques that
+were introduced in this chapter:</p>
+      <ul class="ul">
+        <li class="li">
+          <ul class="ul">
+            <li class="li">
+              <img class="image" src="media/img(353).png">
+              <strong class="ph b">Importing a PXF
+File</strong>: Models are imported into AutoPIPE using the
+<strong class="ph b">File &gt; Import/Export</strong>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <p class="p">
+        <strong class="ph b">&gt; Import &gt; AutoPLANT (*.pxf)</strong> command.
+From this dialog, users can select the file type of the model to be
+imported then double-click on the file. As part of the conversion
+process, the user is required to specify certain properties of the
+system such as the desired piping code and pressure and temperature
+conditions.</p>
+      <p class="p">
+        <img class="image" src="media/img(354).png">
+        <img class="image" src="media/img(67).jpg">
+ <strong class="ph b">Converting a Run Point</strong>: Points can be
+converted to new point types. In this chapter we selected an
+existing run point in the imported model and converted it using the
+<strong class="ph b">Modify &gt; Convert Point to &gt; Tee</strong> command.</p>
+      <ul class="ul">
+        <li class="li">
+          <ul class="ul">
+            <li class="li">
+              <strong class="ph b">Nozzle/Vessel Flexibility</strong>: To define the
+flexibility of the nozzle connection, we create a nozzle
+flexibility element with a length equivalent to the wall thickness
+of the vessel. This was accomplished using the <strong class="ph b">Insert &gt;
+Piping Components &gt; Nozzle</strong> command.</li>
+            <li class="li">
+              <strong class="ph b">Creating a New Disconnected Segment</strong>: A
+pressure vessel was constructed by defining it as a new,
+disconnected segment of pipe. We modeled this vessel as a large
+diameter pipe. By assigning it a new Pipe Identifier name, we were
+able to assign pipe properties unique to the vessel.</li>
+            <li class="li">
+              <strong class="ph b">Connecting Segments</strong>: In the last section of
+this chapter we connected the vessel to a nozzle using a rigid
+element. This was done so that the movement of the vessel due to
+thermal loads is transferred directly to the nozzle at the vessel
+surface.</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </article></main></body></html>

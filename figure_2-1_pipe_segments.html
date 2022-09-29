@@ -1,0 +1,70 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en"><head><meta charset="UTF-8"><meta name="DC.rights.owner" content="(C) Copyright 2022"><meta name="copyright" content="(C) Copyright 2022"><meta name="generator" content="DITA-OT"><meta name="DC.type" content="topic"><meta name="DC.relation" scheme="URI" content="understanding_pipe_segments.html"><meta name="DC.format" content="HTML5"><meta name="DC.identifier" content="id_46"><title>Figure 2-1: Pipe Segments</title><link rel="stylesheet" type="text/css" href="commonltr.css"></head><body id="id_46"><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+        <h1 class="title topictitle1" id="ariaid-title1">Figure 2-1: Pipe Segments</h1>
+        <div class="body">
+          <p class="p">
+            <em class="ph i">Rules for Defining Segments</em>
+          </p>
+          <p class="p">A number of rules govern the definition of piping segments; they
+are listed as follows:</p>
+          <ol class="ol">
+            <li class="li">Each segment has a forward and backward direction and is
+entered as a sequence of points. AutoPIPE automatically keeps track
+of the local axis of the segment, making it convenient to insert
+intermediate points or components using the Length field. These
+points are automatically assigned alphanumeric names (which the
+user can override), with a maximum of four characters each. For
+example, in Figure 2-1, segment B is defined by points A03, B01,
+B02, B03, B04, and B05, all of which have default names. The
+default increment in point names is 1. This increment can be
+changed under <strong class="ph b">Tools &gt; Model Options &gt; Edit
+Options</strong>. AutoPIPE can automatically renumber point names
+after editing.</li>
+            <li class="li">Wind loads and Hydrotest can be turned on and off on a segment
+by segment basis, so keep that in mind when creating your model.
+Also, AutoPIPE provides options to view the model, graphically
+select, delete, or view output results on a segment by segment
+basis.</li>
+            <li class="li">Global coordinates must be entered for the first point of the
+first segment (default global coordinates of Segment A is 0,0,0).
+AutoPIPE automatically displays the first segment screen for the
+user. This is point A00 in the example. Then, each point along the
+segment is typically located by offsets from the preceding point,
+until the whole segment has been defined (e.g. points A00 to A06
+for segment A).</li>
+            <li class="li">Subsequent segments typically begin at points which have been
+defined previously (point A03 in segment B is an example). These
+points are either branch points or continuation points (see #6
+below). Since these points have already been defined, entering
+coordinate data for them is not necessary.</li>
+            <li class="li">Although Subsequent segments typically begin or end at an
+existing point, this is not necessary for the program to function
+correctly. It is often more convenient to start a disconnected
+segment in space using <strong class="ph b">Insert &gt; Piping Components &gt;
+Segment</strong> or clicking on the Segment, typing in the name of
+the first point (in this case, make sure that the name of the first
+point on the segment is not the name of a previously defined
+point), and assigning the starting X,Y,Z coordinates of that new
+Segment. For example, it may be more convenient to define suction
+and discharge sections as disconnected segments without having to
+model the equipment (see Pump Modeling Example in AutoPIPE on-line
+help). Also, the ability to handle disconnected segments is a big
+advantage when importing sections from a CAD model.</li>
+            <li class="li">A continuation point is established when a new segment is
+defined to begin at the end point of an existing segment (see point
+D02 in Figure 2-1). This is typically done to divide a long length
+of pipe into shorter segments or to turn on and off wind loads or
+hydrotest on a segment by segment basis.</li>
+            <li class="li">A tee branch connection point is any point which joins two or
+more pipe segments, and requires a multiple pipe connection (see
+points A03, and B05 in Figure 2-1) such as a tee or cross. A
+continuation point can be made into a branch point using
+<strong class="ph b">Modify &gt; Convert Point To &gt; Tee</strong>.</li>
+            <li class="li">Cut and paste automatically creates a new segment.</li>
+          </ol>
+          <p class="p">When defining a segment, proceed from point to point along the
+segment. Check that everything at the current point has been
+specified before moving on to the next point.</p>
+        </div>
+      <nav role="navigation" class="related-links"><div class="familylinks"><div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="understanding_pipe_segments.html">Understanding Pipe Segments</a></div></div></nav></article></main></body></html>

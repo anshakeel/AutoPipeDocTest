@@ -1,0 +1,115 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en"><head><meta charset="UTF-8"><meta name="DC.rights.owner" content="(C) Copyright 2022"><meta name="copyright" content="(C) Copyright 2022"><meta name="generator" content="DITA-OT"><meta name="DC.type" content="topic"><meta name="DC.format" content="HTML5"><meta name="DC.identifier" content="bookmark136"><title>Connecting the Frame to Pipe</title><link rel="stylesheet" type="text/css" href="commonltr.css"></head><body id="bookmark136"><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">Connecting the Frame to Pipe</h1>
+    <div class="body">
+      <p class="p">In this section we’ll insert 2-point supports in order to
+define the connection between the piping and the structural frames.
+Understanding the capabilities of a 2-point support is an important
+concept when defining pipe/structure interaction since pipes may
+lift off a support rack or have gaps and/or exert friction forces
+on the support structure.</p>
+      <p class="p">
+        <img class="image" src="media/img(390).png"> 1. Sometimes it is easier to
+select points that are placed close together in the model by
+switching to a line mode view of the model. Select <strong class="ph b">View
+&gt; Mode &gt; Single Line View</strong> to display the model as
+shown below.</p>
+      <img class="image" src="media/img(391).png">
+      <p class="p">Window this area and Zoom In.</p>
+      <ol class="ol">
+        <li class="li">
+          <img class="image" src="media/img(81).jpg">Pick the two points shown in the
+graphic above to define the perimeter of the zoom window, then
+select <strong class="ph b">View &gt; Zoom-Pan &gt; Zoom In</strong>. Your model
+view should appear similar to the one shown in the following
+figure.</li>
+      </ol>
+      <p class="p">
+        <img class="image" src="media/img(392).png">
+      </p>
+      <ol class="ol">
+        <li class="li">You will now add a support at B02. First, pick point
+<strong class="ph b">B02</strong> to make it the active point.</li>
+        <li class="li">
+          <img class="image" src="media/img(393).png">Select <strong class="ph b">Insert &gt;
+Supports &gt; Support</strong>.</li>
+        <li class="li">The <em class="ph i">Support</em> dialog is displayed as shown below. A
+U-bolt will attach the pipe to the frame. The U-bolt will have gaps
+of .25 inch {5} mm to the left and right of the pipe. Since the
+pipe is sitting on the frame we will also model the friction
+between the pipe and frame. Since the U-bolt supports perpendicular
+directions to the pipe, we use AutoPIPE's Guide support. Select
+<strong class="ph b">Guide</strong> from the <em class="ph i">Support Type</em> field.</li>
+      </ol>
+      <p class="p">
+        <img class="image" src="media/img(394).png">
+      </p>
+      <table class="table"><caption></caption><colgroup><col><col></colgroup><tbody class="tbody">
+            <tr class="row">
+              <td class="entry">
+                <strong class="ph b">Note:</strong>
+              </td>
+              <td class="entry">
+                <p class="p">Note that additional fields are presented once you enter Guide
+as the Support Type and the cursor advances to the next field.
+AutoPIPE makes frequent use of these “filtered” dialogs
+to request only the information pertinent to the type of
+component</p>
+                <p class="p">that you have selected.</p>
+              </td>
+            </tr>
+          </tbody></table>
+      <ol class="ol">
+        <li class="li">By default the guide is connected to the ground. We instead
+wish to connect the guide to the center of the top beam of the
+support structure at point 5008. Input <strong class="ph b">5008</strong> in the
+<em class="ph i">Connected to</em> field. This is the beam point just below
+piping point B02.</li>
+        <li class="li">In the <em class="ph i">Gap left</em> and <em class="ph i">Gap right</em> fields, input a
+value of <strong class="ph b">0.25</strong> (inches) {5} mm. This will specify
+the gap on both the left and right sides to allow for movement of
+the pipe between the U-bolt.</li>
+        <li class="li">Input a <em class="ph i">Friction coefficient</em> of <strong class="ph b">0.4</strong>
+to consider pipe friction on the support frame.</li>
+        <li class="li">Press <strong class="ph b">OK</strong> to close the dialog.</li>
+        <li class="li">
+          <img class="image" src="media/img(395).png">You will add an identical
+support at B01. Pick point B01 to make it active, and then select
+<strong class="ph b">Insert</strong>
+        </li>
+      </ol>
+      <p class="p">
+        <strong class="ph b">&gt; Supports &gt; Support</strong> to re-open the
+<em class="ph i">Support</em> dialog. Note that all defaults are correct and the
+only required input is to specify a new <em class="ph i">Connected to</em> point
+of <strong class="ph b">5003</strong>. When the dialog appears as shown below,
+press <strong class="ph b">OK</strong> to define the second support.</p>
+      <p class="p">
+        <img class="image" src="media/img(396).png">
+      </p>
+      <ol class="ol">
+        <li class="li">Both supports have been added to connect the frame to the
+piping as shown in the following figure.</li>
+      </ol>
+      <img class="image" src="media/img(397).png">
+      <p class="p">The two supports are added to the system.</p>
+      <ol class="ol">
+        <li class="li">You will now complete this section by zooming to the extents of
+the model and restoring the 3D view. Select <strong class="ph b">View &gt;
+Zoom-Pan &gt; Zoom Extents</strong>.</li>
+        <li class="li">
+          <img class="image" src="media/img(82).jpg">Select <strong class="ph b">View &gt; Mode
+&gt; Solid Model View</strong>. The model appears as shown
+below.</li>
+      </ol>
+      <p class="p">
+        <img class="image" src="media/img(398).png">
+      </p>
+      <ol class="ol">
+        <li class="li">
+          <img class="image" src="media/img(83).jpg">Select <strong class="ph b">File &gt; Save
+&gt; Save</strong>.</li>
+      </ol>
+    </div>
+  </article></main></body></html>

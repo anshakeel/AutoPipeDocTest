@@ -1,0 +1,74 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en"><head><meta charset="UTF-8"><meta name="DC.rights.owner" content="(C) Copyright 2022"><meta name="copyright" content="(C) Copyright 2022"><meta name="generator" content="DITA-OT"><meta name="DC.type" content="topic"><meta name="DC.format" content="HTML5"><meta name="DC.identifier" content="bookmark148"><title>Selecting Combinations</title><link rel="stylesheet" type="text/css" href="commonltr.css"></head><body id="bookmark148"><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">Selecting Combinations</h1>
+    <div class="body">
+      <p class="p">AutoPIPE provides an option to select which load cases and
+combinations will be included in an output report. The default is
+to include all load cases and combinations. You will now disable
+all load cases (not print) but the GR+T1 load combination in order
+to further minimize the output report. In effect, you will be
+generating a report that contains only those points that met the
+filter criteria specified for combination GR+T1.</p>
+      <p class="p">
+        <img class="image" src="media/img(90).jpg"> 1. Select <strong class="ph b">Result &gt;
+Setup &gt; Combinations</strong> and select the <strong class="ph b">Non-Code
+Comb</strong>. tab.</p>
+      <ol class="ol">
+        <li class="li">The <em class="ph i">Load Combinations</em> dialog displays as shown below.
+By default AutoPIPE enables all</li>
+      </ol>
+      <p class="p">combinations. You will now disable the GR load case (Print
+column) in order to isolate results only for the GT1 (i.e. GR+T1)
+load combination. Disable the following fields by clicking in the
+box adjacent to the field (ensure there is NOT a checkmark in the
+box next to the <strong class="ph b">Gravity</strong> or
+<strong class="ph b">Thermal</strong> fields):</p>
+      <p class="p">
+        <img class="image" src="media/img(411).png">
+      </p>
+      <ol class="ol">
+        <li class="li">
+          <img class="image" src="media/img(91).jpg">Press <strong class="ph b">OK</strong> to
+close the dialog.</li>
+        <li class="li">The next step is to generate the output report. Select
+<strong class="ph b">Result &gt; Quick Reports &gt; Output Report</strong>.</li>
+        <li class="li">The <em class="ph i">Batch Report</em> dialog is displayed as shown in the
+following figure. Accept the default report file name, then make
+the following changes to the dialog; these changes allow you to
+produce a report which includes only those points which satisfy the
+displacement criteria defined previously:</li>
+      </ol>
+      <p class="p" id="bookmark148__bookmark149">
+        <img class="image" src="media/img(412).png">
+      </p>
+      <ol class="ol">
+        <li class="li">When the dialog appears as shown above, press
+<strong class="ph b">OK</strong> to accept the values and close it. The output
+report is displayed in a separate window.</li>
+      </ol>
+      <table class="table"><caption></caption><colgroup><col><col></colgroup><tbody class="tbody">
+            <tr class="row">
+              <td class="entry">
+                <strong class="ph b">Hint:</strong>
+              </td>
+              <td class="entry">
+                <p class="p">Like any window, the output report can be re-sized, minimized,
+maximized, scrolled,</p>
+                <p class="p">printed, etc. Refer to your Windows’ documentation for
+more information on windows</p>
+                <p class="p">and their properties.</p>
+              </td>
+            </tr>
+          </tbody></table>
+      <ol class="ol">
+        <li class="li">Note that only the points which met the user-specified filter
+criteria (exceed 0.8"</li>
+      </ol>
+      <p class="p">{20mm}deflection) for combination GT1 are reported. You will now
+close this window and return to our model. Select <strong class="ph b">File &gt;
+Exit</strong> to close the report window (you can also click the
+“<strong class="ph b">X</strong>” in the upper-right corner of the
+window).</p>
+    </div>
+  </article></main></body></html>

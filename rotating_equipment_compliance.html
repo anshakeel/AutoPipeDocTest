@@ -1,0 +1,78 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en"><head><meta charset="UTF-8"><meta name="DC.rights.owner" content="(C) Copyright 2022"><meta name="copyright" content="(C) Copyright 2022"><meta name="generator" content="DITA-OT"><meta name="DC.type" content="topic"><meta name="DC.format" content="HTML5"><meta name="DC.identifier" content="id_170"><title>Rotating Equipment Compliance</title><link rel="stylesheet" type="text/css" href="commonltr.css"></head><body id="id_170"><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">Rotating Equipment Compliance</h1>
+    <div class="body">
+      <p class="p">We will now perform a rotating equipment compliance check for an
+API 617 compressor attached to inlet point A00 and outlet point
+A14.</p>
+      <table class="table"><caption></caption><colgroup><col><col></colgroup><tbody class="tbody">
+            <tr class="row">
+              <td class="entry">
+                <strong class="ph b">Note:</strong>
+              </td>
+              <td class="entry">
+                <p class="p">During this exercise AutoPIPE automatically uses the forces and
+moments at the user-</p>
+                <p class="p">specified points to perform the compliance check.</p>
+              </td>
+            </tr>
+          </tbody></table>
+      <p class="p">
+        <img class="image" src="media/img(92).jpg">
+        <img class="image" src="media/img(93).jpg">
+1. Select <strong class="ph b">Result &gt; Rotating Equipment &gt;
+Insert</strong>. The <em class="ph i">Rotating Equipment</em> dialog is
+displayed.</p>
+      <ol class="ol">
+        <li class="li">AutoPIPE allows for multiple rotating equipment to be defined
+including pumps, compressors, turbines, etc. Specify unique
+equipment ID to identify this element. In the <em class="ph i">Equipment ID</em>
+field, input <strong class="ph b">compr1</strong>.</li>
+        <li class="li">From the <em class="ph i">Type</em> selection list, choose
+<strong class="ph b">Compress</strong> for an API 617 compressor. After the type
+is selected, the Rotating Equipment dialog is filtered to provide
+additional fields related specifically to the equipment type (in
+this case, a compressor).</li>
+        <li class="li">Press <strong class="ph b">Tab</strong> to move to the <em class="ph i">Generate
+Report</em> field. Keep this field enabled for reporting of this
+equipment in the generation of a compliance report.</li>
+        <li class="li">Define the properties of the compressor by entering the
+following values in the appropriate fields:</li>
+      </ol>
+      <p class="p">Suction point: <strong class="ph b">A00</strong> Discharge point:
+<strong class="ph b">A14</strong> Shaft axis: <strong class="ph b">Global X</strong>
+      </p>
+      <p class="p">Override Nozzle Coordinates: <strong class="ph b">Unchecked</strong>
+      </p>
+      <ol class="ol">
+        <li class="li">After the dialog appears as shown above, press
+<strong class="ph b">OK</strong> to accept the values and close the dialog</li>
+        <li class="li">
+          <img class="image" src="media/img(94).jpg">Now that the rotating equipment
+is defined, we can review the results of the equipment compliance
+check. Select <strong class="ph b">Result &gt; Quick Reports &gt; Output
+Report</strong>. When the <em class="ph i">Batch Report</em> dialog appears,
+<strong class="ph b">DISABLE</strong> the <em class="ph i">Apply Filter Criteria</em> and
+<em class="ph i">Displacement</em> options, and remove the</li>
+      </ol>
+      <p class="p">
+        <strong class="ph b">Displacement</strong> report and add the
+<strong class="ph b">Equipment</strong> report. When the dialog appears as shown
+below, press <strong class="ph b">OK</strong> to generate the report.</p>
+      <p class="p">
+        <img class="image" src="media/img(413).png">
+      </p>
+      <ol class="ol">
+        <li class="li">The <em class="ph i">Rotating Equipment</em> report is displayed. This
+report displays the loads automatically extracted from the analysis
+and equations required by the API 617 compliance. AutoPIPE’s
+rotating equipment modules automatically extract the forces and
+moments from the piping analysis, saving the user from manually
+inputting loads for each load case. Notice that an asterisk
+indicates that an API 617 allowable was exceeded.</li>
+        <li class="li">After viewing the report results, close the window
+(<strong class="ph b">File &gt; Exit</strong>) to return to the model.</li>
+      </ol>
+    </div>
+  </article></main></body></html>

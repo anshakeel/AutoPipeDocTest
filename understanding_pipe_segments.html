@@ -1,0 +1,58 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en"><head><meta charset="UTF-8"><meta name="DC.rights.owner" content="(C) Copyright 2022"><meta name="copyright" content="(C) Copyright 2022"><meta name="generator" content="DITA-OT"><meta name="DC.type" content="topic"><meta name="DC.relation" scheme="URI" content="autopipe_modeling_concepts.html"><meta name="DC.relation" scheme="URI" content="figure_2-1_pipe_segments.html"><meta name="DC.format" content="HTML5"><meta name="DC.identifier" content="bookmark40"><title>Understanding Pipe Segments</title><link rel="stylesheet" type="text/css" href="commonltr.css"></head><body id="bookmark40"><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+      <h1 class="title topictitle1" id="ariaid-title1">Understanding Pipe Segments</h1>
+      <div class="body">
+        <p class="p">Each piping system is divided into a number of segments. As an
+example, the sample model shown below contains five segments
+labeled A through E. Piping models are entered into the program,
+segment by segment. They may be extended or modified at any time by
+either adding more segments or changing existing ones. The segments
+are labeled automatically (A through E in the example). If more
+than twenty-six segments are entered, the additional ones are
+labeled AA, AB, AC and so on.</p>
+        <p class="p">Although most of the piping segment definition is handled
+automatically with AutoPIPE, in some circumstances it is
+advantageous to plan the model in advance and divide it into
+logical “segments” before creating the system (see
+‘Rules for defining Pipe Segments’). Typically, a
+segment would begin and end at anchor points or a branch
+connection. However, as shown in Figure 2-1 below, at point D02, a
+pipeline may be divided into two or more contiguous segments.
+Whenever a tee/branch is inserted, AutoPIPE automatically assigns a
+new segment identifier. Each new segment begins with a different
+alpha character, making it easier for node numbering and easier to
+keep track of segments when reviewing input listings or output
+results.</p>
+        <p class="p">When defining a new system, AutoPIPE automatically displays the
+first Segment screen (the first segment is segment A). In this
+screen, the user must specify starting X, Y, Z coordinates of the
+Segment and input a Pipe identifier name. A Pipe identifier is used
+to assign properties. The Pipe identifier can be any name that the
+user wishes to use. It is a good idea to choose a meaningful name
+such as the first few letters of a line ID or something like
+8”std (indicating 8” nominal diameter, standard
+schedule wall thickness) to help you keep track of pipe properties
+when reviewing the model.</p>
+        <p class="p">These properties will be applied to all components attached to
+that pipe identifier until otherwise specified by inputting a new
+pipe identifier name in one of the component dialogue screens.
+After inputting a new Pipe identifier name, the <em class="ph i">Pipe
+properties</em> dialogue screen will automatically be displayed for
+input. For example, if you define a Pipe identifier as a 4-inch
+line, then all following components will default to those same
+properties until the user types in a new Pipe identifier name on a
+component dialogue. A segment can be made up of multiple pipe
+identifiers.</p>
+        <p class="p">Existing Pipe properties can be easily modified using either
+<strong class="ph b">Modify &gt; Properties &gt; Pipe Properties</strong> (which
+modifies that Pipe Identifier throughout the entire model, wherever
+it was used) or by graphical selection of a range of points and
+<strong class="ph b">Modify&gt; Properties &gt; Pipe Properties Over
+Range</strong>.</p>
+        <p class="p">
+          <img class="image" src="media/img(145).png">
+        </p>
+      </div>
+      
+    <nav role="navigation" class="related-links"><ul class="ullinks"><li class="link ulchildlink"><strong><a href="figure_2-1_pipe_segments.html">Figure 2-1: Pipe Segments</a></strong><br></li></ul><div class="familylinks"><div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="autopipe_modeling_concepts.html">AutoPIPE Modeling Concepts</a></div></div></nav></article></main></body></html>

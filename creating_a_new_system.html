@@ -1,0 +1,258 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en"><head><meta charset="UTF-8"><meta name="DC.rights.owner" content="(C) Copyright 2022"><meta name="copyright" content="(C) Copyright 2022"><meta name="generator" content="DITA-OT"><meta name="DC.type" content="topic"><meta name="DC.format" content="HTML5"><meta name="DC.identifier" content="bookmark53"><title>Creating a New System</title><link rel="stylesheet" type="text/css" href="commonltr.css"></head><body id="bookmark53"><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">Creating a New System</h1>
+    <div class="body">
+      <p class="p">When a new system is created, AutoPIPE automatically presents a
+series of dialogs that allow you to establish the piping code,
+pressure and temperature loads, pipe materials, and other factors.
+This section guides you through the completion of each of these
+dialogs.</p>
+      <table class="table"><caption></caption><colgroup><col><col></colgroup><tbody class="tbody">
+            <tr class="row">
+              <td class="entry">
+                <strong class="ph b">Note:</strong>
+              </td>
+              <td class="entry">
+                <p class="p">Before beginning this exercise, you may want to create a
+directory on your local drive where</p>
+                <p class="p">the tutorial model can be saved.</p>
+              </td>
+            </tr>
+          </tbody></table>
+      <ul class="ul">
+        <li class="li">
+          <ol class="ol">
+            <li class="li">
+              <img class="image" src="media/img(152).png">Select <strong class="ph b">File &gt; Model
+&gt; New</strong>.</li>
+            <li class="li">The <em class="ph i">New</em> dialog is displayed. Navigate to the
+<em class="ph i">Examples</em> directory, type <strong class="ph b">TUTOR1</strong> in the
+<em class="ph i">File Name</em>
+            </li>
+          </ol>
+        </li>
+      </ul>
+      <p class="p">field, then press <strong class="ph b">Save</strong>.</p>
+      <p class="p">
+        <img class="image" src="media/img(3).jpg">
+      </p>
+      <table class="table"><caption></caption><colgroup><col><col></colgroup><tbody class="tbody">
+            <tr class="row">
+              <td class="entry">
+                <strong class="ph b">Note:</strong>
+              </td>
+              <td class="entry">
+                <p class="p">If the <em class="ph i">Project Chooser</em> dialog displays, prompting you
+to assign the model to a project, simply press
+<strong class="ph b">Cancel</strong>.</p>
+                <p class="p">By default, the file is saved in the same directory where
+AutoPIPE is installed. If you prefer, save the tutorial model in a
+separate directory.</p>
+              </td>
+            </tr>
+          </tbody></table>
+      <ul class="ul">
+        <li class="li">
+          <ol class="ol">
+            <li class="li">The <em class="ph i">General Model Options</em> dialog is automatically
+displayed. For the first tutorial model, let’s</li>
+          </ol>
+        </li>
+      </ul>
+      <p class="p">discuss some of these areas in detail. First, input the
+following values:</p>
+      <ul class="ul">
+        <li class="li">
+          <ul class="ul">
+            <li class="li">
+              <ul class="ul">
+                <li class="li">Project ID: <strong class="ph b">AutoPIPE Tutorial 1</strong>
+                </li>
+                <li class="li">Prepared by: <strong class="ph b">{your initials}</strong>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <table class="table"><caption></caption><colgroup><col><col></colgroup><tbody class="tbody">
+            <tr class="row">
+              <td class="entry">
+                <strong class="ph b">Note:</strong>
+              </td>
+              <td class="entry">
+                <p class="p">The values you input in these two fields will appear in the
+headers of reports that are</p>
+                <p class="p">generated on the system.</p>
+              </td>
+            </tr>
+          </tbody></table>
+      <ul class="ul">
+        <li class="li">
+          <ol class="ol">
+            <li class="li">AutoPIPE filters many of its dialogs based on the <em class="ph i">Piping
+Code</em> to ensure code compliance and to help you properly
+identify various elements of the system. Select <strong class="ph b">B31.3
+Process</strong> from the <em class="ph i">Piping Code</em> selection list
+(press the down arrow next to the field to open a list of the
+available codes).</li>
+            <li class="li">Select <strong class="ph b">2012</strong> from the <em class="ph i">Edition</em>
+selection list.</li>
+            <li class="li">Notice the <em class="ph i">Vertical Axis Direction</em> field. AutoPIPE
+models are constructed in three-dimensional space, which means that
+you must be aware of three direction vectors. By default, the
+vertical axis will be set to the Y-axis. However, if you’d
+like to customize the vector that is considered to run in the
+vertical plane, you could change this value. For our model, accept
+the Y-axis default.</li>
+            <li class="li">The next field of interest is the <em class="ph i">Number of
+Thermal/Pressure Cases</em>. In order to define two
+thermal/pressure cases for analysis, input a value of
+<strong class="ph b">2</strong> in this field.</li>
+            <li class="li">There are several methods for navigating within AutoPIPE
+dialogs. You can use the mouse to position the cursor in a field,
+or press <strong class="ph b">Tab</strong> to jump to the next field in
+sequence. For example, press <strong class="ph b">Tab</strong> now to jump to
+the <em class="ph i">Ambient Temperature</em> field, which contains a value of
+70°F</li>
+          </ol>
+        </li>
+      </ul>
+      <p class="p">{21.1°C}. After this field is highlighted, examine the
+status bar at the bottom of the AutoPIPE application window. The
+lower right hand corner will always display the units associated
+with the active field. In this case, the status field reads deg F.
+A brief glance at the <em class="ph i">Units</em> area of the status bar will
+always help you to confirm the units associated with the active
+field. Accept the default <em class="ph i">Ambient Temperature</em> value of 70
+{21.1}.</p>
+      <p class="p">
+        <img class="image" src="media/img(4).jpg">
+      </p>
+      <ul class="ul">
+        <li class="li">
+          <ol class="ol">
+            <li class="li">Press <strong class="ph b">OK</strong> to close the <em class="ph i">General Model
+Options</em> dialog and display the <em class="ph i">Segment</em> dialog.</li>
+            <li class="li">The <em class="ph i">Segment</em> dialog allows you to assign a name and
+starting location for the first pipe segment to be placed in the
+model. Accept the (0,0,0) global coordinate default for the first
+segment (A). The next step is to assign a Pipe Data Identifier to
+this segment. A set of pipe properties can be defined and
+associated with a named ID. It is a good idea to choose a
+meaningful pipe identifier name such as the first few letters of a
+line ID or a descriptive name. In our example, we will use
+12”STD {300STD} to indicate a 12"{300mm} nominal, standard
+schedule wall thickness. Input <strong class="ph b">12"STD</strong> in the
+<em class="ph i">Pipe data identifier</em> field.</li>
+          </ol>
+        </li>
+      </ul>
+      <p class="p">
+        <img class="image" src="media/img(153).png">
+      </p>
+      <ul class="ul">
+        <li class="li">
+          <ol class="ol">
+            <li class="li">Press <strong class="ph b">OK</strong> to display the <em class="ph i">Pipe
+Properties</em> dialog.</li>
+          </ol>
+        </li>
+      </ul>
+      <p class="p">
+        <img class="image" src="media/img(154).png">
+      </p>
+      <ul class="ul">
+        <li class="li">
+          <ol class="ol">
+            <li class="li">Note that <em class="ph i">12”STD</em> automatically appears in the
+<em class="ph i">Pipe Identifier</em> field of this dialog. These properties
+will be associated with all components associated with the
+12”STD {300STD} line.</li>
+          </ol>
+        </li>
+      </ul>
+      <table class="table"><caption></caption><colgroup><col><col></colgroup><tbody class="tbody">
+            <tr class="row">
+              <td class="entry">
+                <strong class="ph b">Note:</strong>
+              </td>
+              <td class="entry">
+                <p class="p">During creation of the model, you can define a new segment and
+give it a new Pipe Identifier. Doing so will re-display the
+<em class="ph i">Pipe Properties</em> dialog for the definition of the new</p>
+                <p class="p">pipe.</p>
+              </td>
+            </tr>
+          </tbody></table>
+      <ul class="ul">
+        <li class="li">
+          <ol class="ol">
+            <li class="li">Specify the size of the pipe by selecting
+<strong class="ph b">12.000</strong> {300} from the <em class="ph i">Nominal Diameter</em>
+selection list.</li>
+            <li class="li">Enter <strong class="ph b">1</strong> {25} in the <em class="ph i">Insul Thickness</em>
+field.</li>
+            <li class="li">From the <em class="ph i">Insul Material</em> field, select
+<strong class="ph b">Calc</strong> for calcium silicate. After the insulation
+material is selected, the dialog is automatically populated with
+insulation density values. AutoPIPE contains a list of these
+definitions in its default libraries. If desired, you can override
+these values manually.</li>
+            <li class="li">From the <em class="ph i">Pipe Material</em> field, select
+<strong class="ph b">A106-B</strong> carbon steel type. As with the Insulation
+Material, AutoPIPE will automatically populate the material
+properties and stress allowables based on the definitions in the
+library.</li>
+          </ol>
+        </li>
+      </ul>
+      <table class="table"><caption></caption><colgroup><col><col></colgroup><tbody class="tbody">
+            <tr class="row">
+              <td class="entry">
+                <strong class="ph b">Note:</strong>
+              </td>
+              <td class="entry">
+                <p class="p">If a material is requested which is not in the library, the
+procedure would be to select</p>
+                <p class="p">NS (for Non-Standard), then define the material property values
+manually.</p>
+              </td>
+            </tr>
+          </tbody></table>
+      <ul class="ul">
+        <li class="li">
+          <ol class="ol">
+            <li class="li">Press <strong class="ph b">OK</strong> to close the <em class="ph i">Pipe Properties</em>
+dialog. The <em class="ph i">Operating Pressure &amp; Temperature</em> dialog is
+automatically displayed. Note that two columns are available for
+input in this dialog. This is because you entered “2”
+in the <em class="ph i">Number of Thermal/Pressure cases</em> field (from the
+<em class="ph i">General Model Options</em> dialog). Input <strong class="ph b">350</strong>
+(psi) {2.4 n/mm2} in the <em class="ph i">Case 1 Pressure</em> field, then
+<strong class="ph b">Tab</strong> to the <em class="ph i">Case 1 temperature</em> and input
+<strong class="ph b">20</strong> {-5° C}. After the Case 1
+Pressure/Temperature values have been specified,
+<strong class="ph b">Tab</strong> to define the values for Case 2. Input a
+<em class="ph i">Case 2 Pressure</em> of <strong class="ph b">350</strong> {2.4} and a
+temperature of <strong class="ph b">550</strong> {285}.</li>
+          </ol>
+        </li>
+      </ul>
+      <p class="p">
+        <img class="image" src="media/img(5).jpg">
+      </p>
+      <ul class="ul">
+        <li class="li">
+          <ol class="ol">
+            <li class="li">When the dialog appears as shown above, press
+<strong class="ph b">OK</strong>.</li>
+            <li class="li">The properties of the system and starting segment have now been
+defined. Notice that a marker ( + ) has been placed at the (0,0,0)
+starting point named A00.</li>
+          </ol>
+        </li>
+      </ul>
+    </div>
+  </article></main></body></html>

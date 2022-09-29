@@ -1,0 +1,228 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en"><head><meta charset="UTF-8"><meta name="DC.rights.owner" content="(C) Copyright 2022"><meta name="copyright" content="(C) Copyright 2022"><meta name="generator" content="DITA-OT"><meta name="DC.type" content="topic"><meta name="DC.relation" scheme="URI" content="routing_segment_a.html"><meta name="DC.format" content="HTML5"><meta name="DC.identifier" content="bookmark55"><title>Routing from the Anchor to the Tee</title><link rel="stylesheet" type="text/css" href="commonltr.css"></head><body id="bookmark55"><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+      <h1 class="title topictitle1" id="ariaid-title1">Routing from the Anchor to the Tee</h1>
+      <div class="body">
+        <p class="p">
+          <img class="image" src="media/img(156).png">You will begin this system by
+inserting an anchor element. An anchor restrains the pipe in all 3
+translational and all 3 rotational directions.</p>
+        <ol class="ol">
+          <li class="li">Select <strong class="ph b">Insert &gt; Supports &gt;
+Anchor/NodeLink</strong> to display the <em class="ph i">Anchor/NodeLink</em>
+dialog.</li>
+          <li class="li">Press <strong class="ph b">OK</strong> to accept the defaults and place a
+rigid anchor with no thermal movements.</li>
+        </ol>
+        <p class="p">
+          <img class="image" src="media/img(6).jpg">The next component will be an
+elbow. An elbow (bend) is a unique component in AutoPIPE because it
+must be offset a specified distance from an existing point, and
+because the orientation of the bend is determined by the location
+of the next component placed in the model. The user specifies the
+distance from the previous point to the tangent intersection point
+(TIP) of the bend (see graphic below). After the TIP is known, the
+orientation of the elbow is determined by the subsequent
+component.</p>
+        <p class="p">
+          <img class="image" src="media/img(157).png">
+        </p>
+        <ol class="ol">
+          <li class="li">Select <strong class="ph b">Insert &gt; Piping Components &gt; Bend</strong>
+to place the elbow. The <em class="ph i">Bend</em> dialog is displayed as shown
+below.</li>
+        </ol>
+        <p class="p">
+          <img class="image" src="media/img(158).png">
+        </p>
+        <ol class="ol">
+          <li class="li">You will place this elbow 10’ 3 ½” {3100mm}
+from the anchor point in the Z-direction. AutoPIPE allows you to
+input architectural units. <strong class="ph b">Tab</strong> twice to the
+<em class="ph i">DZ</em> field and then input</li>
+        </ol>
+        <p class="p">
+          <strong class="ph b">10.29</strong> {3100} (An equivalent entry would be
+10-3-1/2). <strong class="ph b">Tab</strong> to advance the cursor to the next
+field. Notice that the <em class="ph i">Length</em> field is updated
+automatically, and converts the feet/inches format to decimal
+units. Press <strong class="ph b">OK</strong> to close the dialog. The model
+appears as shown in the following figure.</p>
+        <p class="p">
+          <img class="image" src="media/img(159).png">
+        </p>
+        <p class="p">
+          <img class="image" src="media/img(7).jpg"> 5. Select <strong class="ph b">Insert &gt;
+Piping Components &gt; Bend</strong> to place a second elbow.</p>
+        <p class="p">
+          <img class="image" src="media/img(160).png">
+        </p>
+        <ol class="ol">
+          <li class="li">
+            <img class="image" src="media/img(8).jpg">
+            <strong class="ph b">Tab</strong> twice to the
+<em class="ph i">DY-Offsets</em> field and enter <strong class="ph b">10</strong> {3000} to
+indicate a 10 foot {3000mm} vertical offset dimension to the
+tangent intersection point. Press <strong class="ph b">OK</strong> to close the
+dialog. The model appears as shown in the following figure. Note
+that the first elbow is now drawn, while the second elbow is not.
+This is because the second elbow is still awaiting the definition
+of a new point in order to properly orient the elbow in
+three-dimensional space. Also, AutoPIPE automatically placed a run
+of pipe between the anchor and the first bend.</li>
+        </ol>
+        <p class="p">
+          <img class="image" src="media/img(161).png">
+        </p>
+        <ol class="ol">
+          <li class="li">Select <strong class="ph b">View &gt; Mode &gt; Solid Model View</strong> to
+display a three-dimensional view of the model as shown below.
+Notice that a pipe segment exists between the anchor and the bend
+at point A01.</li>
+        </ol>
+        <p class="p">
+          <img class="image" src="media/img(162).png">
+        </p>
+        <ol class="ol">
+          <li class="li">
+            <img class="image" src="media/img(163).png">
+            <img class="image" src="media/img(164).png">Select <strong class="ph b">Insert &gt; Piping
+Components &gt; Run</strong> to create a new run point. The <em class="ph i">Run
+Point</em> dialog is displayed as shown in the following
+figure.</li>
+        </ol>
+        <p class="p">
+          <img class="image" src="media/img(165).png">
+        </p>
+        <ol class="ol">
+          <li class="li">
+            <strong class="ph b">Tab</strong> once to the <em class="ph i">DX-Offsets</em> field and
+enter <strong class="ph b">– 3</strong> {-900} to create a new run point 3
+feet {900mm} from the TIP of the second bend in the -X direction.
+Press <strong class="ph b">OK</strong> to close the dialog. The model appears as
+shown in the following figure.</li>
+        </ol>
+        <p class="p">
+          <img class="image" src="media/img(166).png">
+        </p>
+        <ol class="ol">
+          <li class="li">The next step is to insert a reducer at point A03. Select
+<strong class="ph b">Insert &gt; Piping Components &gt; Reducer</strong> to
+display the dialog shown below.</li>
+        </ol>
+        <p class="p">
+          <img class="image" src="media/img(167).png">
+        </p>
+        <ol class="ol">
+          <li class="li">Enter <strong class="ph b">9"</strong> {225} (note the use of the inch
+symbol here) in the <em class="ph i">Length</em> field. Note that the length
+field keeps track of the local axis, saving you from having to type
+DX, DY, DZ offsets. Again, once you Tab to advance the cursor,
+AutoPIPE automatically converts the Imperial units (9”) to
+the decimal equivalent (0.75).</li>
+          <li class="li">Since a reducer always has a different pipe property on the
+other end, you need to input a new pipe identifier name to assign
+properties. Input <strong class="ph b">8"STD</strong> {200STD} in the <em class="ph i">Pipe
+Identifier</em> field, and then press <strong class="ph b">OK</strong>.</li>
+          <li class="li">The <em class="ph i">Pipe Properties</em> dialog is displayed as shown in
+the following figure.</li>
+        </ol>
+        <p class="p">
+          <img class="image" src="media/img(168).png">
+        </p>
+        <ol class="ol">
+          <li class="li">Select <strong class="ph b">8.00</strong> {200} from the <em class="ph i">Nominal
+Diameter</em> selection list, and then press <strong class="ph b">OK</strong> to
+accept the remaining pipe property values.</li>
+          <li class="li">When the <em class="ph i">Operating Pressure &amp; Temperature</em> dialog
+displays, accept the default values and click
+<strong class="ph b">OK</strong>
+          </li>
+        </ol>
+        <p class="p">to continue. The model appears as shown in the following
+figure.</p>
+        <p class="p">
+          <img class="image" src="media/img(169).png">
+        </p>
+        <ol class="ol">
+          <li class="li">Next, you will insert a valve beginning at node A04 at the far
+point of the reducer. Select <strong class="ph b">Insert</strong>
+          </li>
+        </ol>
+        <p class="p">
+          <img class="image" src="media/img(170).png">
+          <strong class="ph b">&gt; Piping Components
+&gt; Valve</strong> to open the <em class="ph i">Valve</em> dialog.</p>
+        <p class="p">
+          <img class="image" src="media/img(171).png">
+        </p>
+        <ol class="ol">
+          <li class="li">In this example, you will allow the weight and length of the
+valve to be extracted from AutoPIPE's valve database. Select
+<strong class="ph b">AutoPIPE Generic</strong> from the <em class="ph i">Manufacturer</em>
+selection list, then select <strong class="ph b">ANSI/ASME</strong> from the
+<em class="ph i">Standard</em> selection list.</li>
+          <li class="li">Select <strong class="ph b">Gate Valves</strong> from the <em class="ph i">Sub
+Category</em> selection list and select a <em class="ph i">Pressure Rating</em>
+of <strong class="ph b">300</strong> as shown above. Notice that valve length
+and weight are automatically filled in from the database (the valve
+properties from the AutoPIPE database can be overridden). Press
+<strong class="ph b">OK</strong> to close the dialog. The model appears as shown
+in the following figure.</li>
+        </ol>
+        <p class="p">
+          <img class="image" src="media/img(172).png">
+        </p>
+        <ol class="ol">
+          <li class="li">
+            <img class="image" src="media/img(9).jpg">There are several zooming
+controls provided by AutoPIPE. To zoom into the valve to examine it
+in detail, click <strong class="ph b">PT1</strong> as shown in the figure above,
+and then press and hold the mouse window and “drag” the
+cursor to define the opposite corner (<strong class="ph b">PT2</strong> in the
+figure above). A dotted line defines the perimeter of the viewing
+window. Select <strong class="ph b">View &gt; Zoom-Pan &gt; Zoom In</strong> to
+zoom into the defined area. The model appears as shown in the
+following figure.</li>
+        </ol>
+        <p class="p">
+          <img class="image" src="media/img(10).jpg">
+        </p>
+        <ol class="ol">
+          <li class="li">Notice that the valve requires a flange connection. To add
+flanges to both ends of the valve with one command, you will first
+select the entire component. Click along the outer edge of the
+valve to select and highlight it.</li>
+        </ol>
+        <p class="p">
+          <img class="image" src="media/img(173).png"> 21. Select <strong class="ph b">Insert &gt;
+Piping Components &gt; Flange</strong> to display the
+<em class="ph i">Flange</em> dialog.</p>
+        <p class="p">
+          <img class="image" src="media/img(174).png">
+        </p>
+        <ol class="ol">
+          <li class="li">
+            <img class="image" src="media/img(175).png">Accept the default
+<strong class="ph b">SLIP-ON</strong>
+            <em class="ph i">Flange type</em>. From the
+<em class="ph i">Pressure Rating</em> list, select <strong class="ph b">300</strong>. In the
+<em class="ph i">Joint End Type</em>, select <strong class="ph b">Weld Neck</strong> from the
+drop-down list. Press <strong class="ph b">OK</strong> to accept the remaining
+defaults. AutoPIPE's flange database is used for the definition of
+flange weights. Flanges are placed on both sides of the valve as
+shown in the graphic below.</li>
+        </ol>
+        <p class="p">
+          <img class="image" src="media/img(176).png">
+        </p>
+        <ol class="ol">
+          <li class="li">Select <strong class="ph b">View &gt; Zoom-Pan &gt; Zoom Extents</strong>.
+The extents of the model are displayed as shown in the following
+figure.</li>
+        </ol>
+        <p class="p">
+          <img class="image" src="media/img(177).png">
+        </p>
+      </div>
+    <nav role="navigation" class="related-links"><div class="familylinks"><div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="routing_segment_a.html">Routing Segment A</a></div></div></nav></article></main></body></html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en"><head><meta charset="UTF-8"><meta name="DC.rights.owner" content="(C) Copyright 2022"><meta name="copyright" content="(C) Copyright 2022"><meta name="generator" content="DITA-OT"><meta name="DC.type" content="topic"><meta name="DC.relation" scheme="URI" content="connecting_to_another_segment.html"><meta name="DC.format" content="HTML5"><meta name="DC.identifier" content="bookmark116"><title>To Connect to Another Segment</title><link rel="stylesheet" type="text/css" href="commonltr.css"></head><body id="bookmark116"><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+      <h1 class="title topictitle1" id="ariaid-title1">To Connect to Another Segment</h1>
+      <div class="body">
+        <ol class="ol">
+          <li class="li">
+            <img class="image" src="media/img(350).png">You will now connect B02 to the
+vessel centerline at point C01. Pick point <strong class="ph b">B02</strong>.
+Ensure that B02 is listed as the active point in the status area
+(Bottom line of the screen).</li>
+          <li class="li">The next step is to join B02 to C01 using a tee element. Select
+<strong class="ph b">Insert &gt; Piping Components &gt; Tee</strong> to display
+the Tee dialog. (Note you can also use Insert &gt; Piping
+Components &gt; Run).</li>
+        </ol>
+        <p class="p">
+          <img class="image" src="media/img(65).jpg">
+        </p>
+        <ol class="ol">
+          <li class="li">By default, AutoPIPE assumes that the tee point will be a new
+point. To connect point B02 to C01 you must override the <em class="ph i">Name
+of point field</em> and enter C01. When an existing point is
+specified, AutoPIPE automatically connects the two segments. Input
+<strong class="ph b">C01</strong> in the <em class="ph i">Name of point</em> field.</li>
+          <li class="li">
+            <strong class="ph b">Tab</strong> once and you will notice that most fields
+are grayed out because we are connecting to an existing point.
+<strong class="ph b">Tab</strong> to the <em class="ph i">Type of tee</em> field, set the
+<em class="ph i">Type of tee</em> to <strong class="ph b">Unreinfor</strong>. When the dialog
+appears as shown above, press <strong class="ph b">OK</strong> to accept the
+values and close the dialog.</li>
+          <li class="li">Since the pipe connecting the nozzle to the center of the pipe
+is not real, it is best that you set it to have rigid properties.
+Select the <strong class="ph b">pipe joining B02 to C01</strong> by clicking at
+the middle of this pipe section to highlight it in red.</li>
+        </ol>
+        <p class="p">
+          <img class="image" src="media/img(351).png"> 6. Select <strong class="ph b">Insert &gt;
+Properties &gt; Rigid Options Over Range</strong> to convert this
+pipe into a rigid pipe.</p>
+        <p class="p">
+          <img class="image" src="media/img(352).png">
+        </p>
+        <ol class="ol">
+          <li class="li">Select the default options as shown above to ignore the weight
+of the pipe and account for thermal expansion. Accounting for
+thermal expansion this way relieves you from entering the vessel
+thermal movements. AutoPIPE uses the material expansion associated
+with the pipe identifier material. Press <strong class="ph b">OK</strong> to
+accept the rigid options.</li>
+          <li class="li">
+            <img class="image" src="media/img(66).jpg">The rigid pipe section will
+change color to distinguish it as a rigid pipe.</li>
+          <li class="li">Select <strong class="ph b">File &gt; Save &gt; Save</strong> to save the
+model and its data.</li>
+        </ol>
+      </div>
+    <nav role="navigation" class="related-links"><div class="familylinks"><div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="connecting_to_another_segment.html">Connecting to Another Segment</a></div></div></nav></article></main></body></html>

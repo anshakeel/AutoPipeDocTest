@@ -1,0 +1,69 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en"><head><meta charset="UTF-8"><meta name="DC.rights.owner" content="(C) Copyright 2022"><meta name="copyright" content="(C) Copyright 2022"><meta name="generator" content="DITA-OT"><meta name="DC.type" content="topic"><meta name="DC.relation" scheme="URI" content="perform_a_static_analysis.html"><meta name="DC.format" content="HTML5"><meta name="DC.identifier" content="bookmark88"><title>To Define a Static Analysis</title><link rel="stylesheet" type="text/css" href="commonltr.css"></head><body id="bookmark88"><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+      <h1 class="title topictitle1" id="ariaid-title1">To Define a Static Analysis</h1>
+      <div class="body">
+        <ol class="ol">
+          <li class="li">
+            <img class="image" src="media/img(294).png">Select <strong class="ph b">Analysis &gt;
+Setup &gt; Static Analysis Sets</strong> to display the
+<em class="ph i">Analysis Sets</em> dialog.</li>
+        </ol>
+        <p class="p">
+          <img class="image" src="media/img(295).png">
+        </p>
+        <ol class="ol">
+          <li class="li">Select <em class="ph i">Analysis Set No.</em>
+            <strong class="ph b">1</strong> and click
+<strong class="ph b">Modify</strong> to display the dialog below.</li>
+        </ol>
+        <p class="p">
+          <img class="image" src="media/img(296).png">
+        </p>
+        <ol class="ol">
+          <li class="li">Enable the <strong class="ph b">Earthquake cases E1 and E2</strong>.</li>
+        </ol>
+        <table class="table"><caption></caption><colgroup><col><col></colgroup><tbody class="tbody">
+              <tr class="row">
+                <td class="entry">
+                  <strong class="ph b">Note:</strong>
+                </td>
+                <td class="entry">
+                  <p class="p">Throughout this tutorial, the term "enable" is used to denote
+instances where you should place a check mark in an option field.
+"Enabled" fields contain a checkmark,</p>
+                  <p class="p">while "disabled" fields have no check mark.</p>
+                </td>
+              </tr>
+            </tbody></table>
+        <ol class="ol">
+          <li class="li">Enable <em class="ph i">User case</em>
+            <strong class="ph b">U1</strong>. Enabling this
+field will allow us to analyze the concentrated load U1, which you
+previously defined at point A02N.</li>
+          <li class="li">Since we have defined gaps and friction on the guide supports
+that connect to the frames, we will need to enable the
+<strong class="ph b">Gaps/Friction/Soil</strong> field. By enabling this field
+AutoPIPE considers these non-linear boundary conditions during the
+static analysis.</li>
+          <li class="li">Press <strong class="ph b">OK</strong> to accept the remaining defaults and
+close the <em class="ph i">Static Load Cases</em> dialog.</li>
+          <li class="li">Since you enabled Gaps/Friction/Soil, AutoPIPE displays the
+<em class="ph i">Non-linear Analysis</em> dialog to allow customization of how
+the non-linear analysis is performed. Customization is only
+required if convergence problems occur during the analysis or a
+special load sequence is required.</li>
+        </ol>
+        <p class="p">
+          <img class="image" src="media/img(297).png">
+        </p>
+        <ol class="ol">
+          <li class="li">Press <strong class="ph b">OK</strong> to accept the defaults and close the
+dialog.</li>
+          <li class="li">Press <strong class="ph b">OK</strong> to close the <em class="ph i">Analysis Sets</em>
+dialog.</li>
+          <li class="li">When prompted to analyze the model, press <strong class="ph b">No</strong>
+in the <em class="ph i">Confirm</em> dialog.</li>
+        </ol>
+      </div>
+    <nav role="navigation" class="related-links"><div class="familylinks"><div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="perform_a_static_analysis.html">Perform a Static Analysis</a></div></div></nav></article></main></body></html>

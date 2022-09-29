@@ -1,0 +1,115 @@
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html lang="en"><head><meta charset="UTF-8"><meta name="DC.rights.owner" content="(C) Copyright 2022"><meta name="copyright" content="(C) Copyright 2022"><meta name="generator" content="DITA-OT"><meta name="DC.type" content="topic"><meta name="DC.format" content="HTML5"><meta name="DC.identifier" content="bookmark106"><title>Importing a PXF File</title><link rel="stylesheet" type="text/css" href="commonltr.css"></head><body id="bookmark106"><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">Importing a PXF File</h1>
+    <div class="body">
+      <p class="p">In this section you will learn how to import a model saved in
+the PXF file format into AutoPIPE. The procedure involves
+specifying the file type from the <em class="ph i">Open</em> dialog, defining
+initial system values and the piping code, then saving the model.
+Each of these steps is described below.</p>
+      <table class="table"><caption></caption><colgroup><col><col></colgroup><tbody class="tbody">
+            <tr class="row">
+              <td class="entry">
+                <strong class="ph b">Note:</strong>
+              </td>
+              <td class="entry">
+                <p class="p">The model used in this exercise was created using Bentley's
+AutoPLANT PIPING application. The model was exported from PIPING
+using the Import/Export module,</p>
+                <p class="p">and saved in the PXF file format.</p>
+              </td>
+            </tr>
+          </tbody></table>
+      <p class="p">
+        <img class="image" src="media/img(327).png"> 1. Select <strong class="ph b">File &gt;
+Import/Export &gt; Import &gt; OpenPlant Modeler (*.pxf)</strong>
+to display the <em class="ph i">Import</em>
+      </p>
+      <p class="p">dialog.</p>
+      <table class="table"><caption></caption><colgroup><col><col></colgroup><tbody class="tbody">
+            <tr class="row">
+              <td class="entry">
+                <strong class="ph b">Note:</strong>
+              </td>
+              <td class="entry">
+                <p class="p">AutoPIPE can import files from a number of different plant
+design CAD packages on the market. For this tutorial we are using a
+Bentley AutoPLANT model, but the same</p>
+                <p class="p">principle applies to importing other file types.</p>
+              </td>
+            </tr>
+          </tbody></table>
+      <ol class="ol">
+        <li class="li">Double-click on the <em class="ph i">…\ProgramData\Bentley\AutoPIPE
+CONNECT v12\Examples</em> directory.</li>
+        <li class="li">Double-click on the <strong class="ph b">TUTOR2.PXF</strong> file.</li>
+        <li class="li">The <em class="ph i">General Model Options</em> dialog displays as shown in
+the following figure. From this dialog you can name the system for
+use in reports, enter designer initials, etc. First, name the model
+for identification in reports. Type <strong class="ph b">Second
+Tutorial</strong> in the <em class="ph i">Project ID</em> field, and then enter
+your initials in the <em class="ph i">Prepared by</em> field. Of particular note
+on this dialog is the <em class="ph i">Piping Code</em>, as this field can
+determine which options are available in other areas of the system.
+<strong class="ph b">Tab</strong> to the <em class="ph i">Piping Code</em> and select
+<strong class="ph b">B31.1 Power</strong> from the list and select the
+<strong class="ph b">2012</strong>
+          <em class="ph i">Edition</em>. Note that once a Piping
+Code is</li>
+      </ol>
+      <p class="p">specified, the remaining fields in the dialog are updated to
+reflect the defaults for that code. <strong class="ph b">Tab</strong> to the
+<em class="ph i">Units file name</em> fields and set both the <em class="ph i">Input</em> and
+<em class="ph i">Output</em> units to <strong class="ph b">AutoPIPE</strong> {SI}. Next, set
+the <em class="ph i">Vertical axis direction</em> to the
+<strong class="ph b">Y-Axis</strong>. When the dialog appears as shown in the
+following figure, press the <strong class="ph b">OK</strong> button to close the
+dialog.</p>
+      <p class="p">
+        <img class="image" src="media/img(328).png">
+      </p>
+      <ol class="ol">
+        <li class="li">The <em class="ph i">Import AutoPLANT</em> dialog below displays. From this
+location, select the settings shown below and specify the
+temperature and pressure loads of the imported system.</li>
+        <li class="li">Enter <strong class="ph b">300</strong> {2.0} in the <em class="ph i">Pressure</em>
+field, <strong class="ph b">450</strong> {250} in the <em class="ph i">Temperature</em>
+field.</li>
+        <li class="li">Disable the <strong class="ph b">Use material grade map</strong> option and
+select <strong class="ph b">A53-A</strong> from the <em class="ph i">Pipe Material</em>
+list.</li>
+        <li class="li">Press <strong class="ph b">OK</strong>.</li>
+      </ol>
+      <p class="p">
+        <img class="image" src="media/img(329).png">
+      </p>
+      <ol class="ol">
+        <li class="li">One note and one warning message appear when you click
+<strong class="ph b">Yes</strong> to display the errors and warnings messages.
+The note shows the assumed PXF import options which can be edited
+in the <em class="ph i">CADAP.MAP</em> file. The warning message indicates that
+the file <em class="ph i">linelist.txt</em>, which contains operating data for
+every line number, is missing. In this case, AutoPIPE uses the
+operating data entered above for the entire model.</li>
+      </ol>
+      <p class="p">
+        <img class="image" src="media/img(330).png">
+      </p>
+      <ol class="ol">
+        <li class="li">
+          <img class="image" src="media/img(331).png">Press the close button (the
+<strong class="ph b">X</strong> in the control menu at the upper-right corner of
+the window) to close the <em class="ph i">Errors and Warnings</em> window. The
+imported model now appears within the AutoPIPE modeling window, and
+you can now perform stress analysis on the system. You can also add
+components and modify the model as described in the remaining
+sections of this chapter.</li>
+        <li class="li">Select <strong class="ph b">View &gt; Orientation &gt; 180 deg ISO</strong>
+to display the model as shown below.</li>
+      </ol>
+      <p class="p">
+        <img class="image" src="media/img(332).png">
+      </p>
+    </div>
+  </article></main></body></html>
